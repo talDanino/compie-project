@@ -1,0 +1,17 @@
+.container {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.center {
+    justify-content: center;
+}
+
+.middle {
+    justify-content: space-around;
+}

@@ -1,0 +1,21 @@
+<div class="leftSidebar">
+    <p> Player Name: {{playerName}} </p>
+    <p> Current Score: {{ count-1 }} </p>
+    <p> Best Score:  </p>
+</div>
+
+
+<div class="container">
+    <div class="flex middle">
+        <app-game-button [active]="colors.red" color="red" (guess)="playerGuess($event)" ></app-game-button>
+        <app-game-button [active]="colors.blue" color="blue" (guess)="playerGuess($event)" ></app-game-button>
+        <app-game-button [active]="colors.green" color="green" (guess)="playerGuess($event)" ></app-game-button>
+    </div>
+    
+    <div class="flex middle">
+        <app-game-button [active]="colors.yellow" color="yellow" (guess)="playerGuess($event)" ></app-game-button>
+        <app-game-button [active]="colors.purple" color="purple" (guess)="playerGuess($event)" ></app-game-button>
+        <app-game-button [active]="colors.orange" color="orange" (guess)="playerGuess($event)" ></app-game-button>
+    </div>
+    
+</div>
